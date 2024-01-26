@@ -64,7 +64,7 @@ if __name__ == "__main__":
         print(f"Number of processes being used: {args['num_processes']}")
     else:
         args['device'] = torch.device('cpu')
-        args['num_processes'] = multiprocessing.cpu_count()**2
+        args['num_processes'] = int(multiprocessing.cpu_count())
         print("CUDA is not available! Using CPU.")
         print(f"Number of processes being used: {args['num_processes']}")
 
