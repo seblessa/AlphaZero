@@ -25,7 +25,7 @@ The versions of the operating systems used to develop and test this application 
 - Windows 11
 
 Python Versions:
-- 3.12.0
+- 3.11.0
 
 
 # Requirements
@@ -35,7 +35,7 @@ To keep everything organized and simple, we will use MiniConda to manage our env
 To create an environment with the required packages for this project, run the following commands:
 
 ```bash
-conda create -n LabIACD python pytorch::pytorch torchvision torchaudio -c pytorch
+conda create -n LabIACD python==3.11 pytorch::pytorch torchvision torchaudio -c pytorch
 ```
 To install the requirements run:
 
