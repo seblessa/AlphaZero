@@ -1,0 +1,2 @@
+n_iter,RandomPlayer,GreedyPlayer,AlphaZeroBaseline
+100,0.8,0.0,0.5
