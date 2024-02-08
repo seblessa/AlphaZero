@@ -12,7 +12,7 @@ args = {
     'num_episodes': 100,
     'validation_episodes': 10,
     'learning_rate': 0.001,
-    'num_mcts_sims': 50,
+    'num_mcts_sims': 100,
     'mcts_exploration_weight': 1.0,
     'dirichlet_epsilon': 0.25,
     'dirichlet_alpha': 0.3,
@@ -64,7 +64,7 @@ if __name__ == "__main__":
         print(f"Number of processes being used: {args['num_processes']}")
     else:
         args['device'] = torch.device('cpu')
-        args['num_processes'] = int(multiprocessing.cpu_count())
+        args['num_processes'] = int(multiprocessing.cpu_count())*10
         print("CUDA is not available! Using CPU.")
         print(f"Number of processes being used: {args['num_processes']}")
 
